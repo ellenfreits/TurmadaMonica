@@ -1,8 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('Inserir um título.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
 .cabecalho{
     display: flex;
     font-family: "Bangers", system-ui;
      font-weight: 400;
      font-style: normal;
-     align-items: center;
+     justify-content: center;
+     font-size: 40px;
      
+
 }
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.menu-cebolinha{
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(9, 241, 9);
+}
+.menu-cebolinha:hover,
+.menu-cascao:hover,
+.menu-magali:hover,
+.menu-monica:hover{
+    text-decoration: underline;
+    font-size: 45px;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.menu-magali{
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(248, 224, 7);
+    
+}
+.menu-cascao{
+    text-decoration: none;
+    color: rgb(90, 121, 150);
+    
+}
+.menu-cebolinha{
+    text-decoration: none;
+    color: rgb(11, 218, 11);
+}
+.menu-monica{
+    text-decoration: none;
+    color: rgb(245, 8, 8);
+    
+}
+
