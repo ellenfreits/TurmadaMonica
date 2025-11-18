@@ -1,0 +1,123 @@
+.pagina-monica {
+    background-color: #f5e9ea;
+    font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    color: #222;
+}
+.titulo-monica {
+    color: #cc1f1f;
+    font-family: 'Bangers', 'Nunito', sans-serif;
+    text-align: left;
+    font-size: 56px;
+    margin: 0 0 8px 0;
+}
+.texto1-monica {
+    line-height: 1.6;
+    font-size: 18px;
+    margin: 0 0 16px 0;
+    
+
+   
+    
+}
+
+.imagem1-monica {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+
+
+}
+
+.cabecalho{
+    display: flex;
+    font-family: "Bangers", system-ui;
+     font-weight: 400;
+        background: linear-gradient(90deg, #ffd1d1 0%, #ffe7d6 100%);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        font-family: "Bangers", system-ui;
+        font-weight: 400;
+        justify-content: center;
+        padding: 18px 0;
+}
+.menu{
+    display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        max-width: 1000px;
+        margin: 0 auto;
+}
+
+    .menu-link{
+        text-decoration: none;
+        color: #333;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 6px 10px;
+        border-radius: 6px;
+    }
+    .menu-link:hover{
+        text-decoration: none;
+        color: #8b0000;
+        transform: translateY(-2px);
+    }
+    .menu-link.ativo{
+        color: #b30000;
+        text-decoration: underline;
+    }
+
+    /* Layout container */
+    .container{
+        max-width: 1000px;
+        margin: 28px auto;
+        padding: 0 18px;
+    }
+
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 340px;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 26px;
+    }
+    .hero-text .subtitulo{
+        margin-top: 6px;
+        color: #555;
+        font-size: 18px;
+    }
+
+    .sobre{
+        background: #fff;
+        padding: 18px;
+        border-radius: 8px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+        margin-bottom: 20px;
+    }
+    .sobre h2{margin-top:0}
+    .fatos{margin:12px 0 0 0;padding-left:18px}
+
+    .galeria{margin: 18px 0}
+    .galeria .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    .galeria img{width:100%;height:auto;border-radius:6px}
+
+    .curiosidades{background:#fff;padding:16px;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,0.04);margin-top:18px}
+
+    .rodape{margin-top:28px;padding:18px 0;text-align:center;color:#555}
+
+    @media (max-width: 800px){
+        .hero{grid-template-columns: 1fr;}
+        .galeria .grid{grid-template-columns: repeat(2,1fr)}
+        .menu{gap:14px}
+    }
+
+    @media (max-width: 420px){
+        .galeria .grid{grid-template-columns: 1fr}
+        .titulo-monica{font-size:40px}
+    }
