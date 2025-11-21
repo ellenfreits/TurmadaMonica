@@ -1,10 +1,20 @@
+/* palette compartilhada (igual à página inicial / Cascão) */
+:root {
+  --cabecalho-bg: #ffe066;
+  --color-primary: #d9480f;
+  --color-accent: #a67c00;
+  --card-bg: #fffbe6;
+  --page-bg-start: #f7f7d1;
+  --page-bg-end: #ffe7b3;
+}
+
 .pagina-monica {
-    background-color: #f5e9ea;
+    background: linear-gradient(120deg, var(--page-bg-start) 0%, var(--page-bg-end) 100%);
     font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     color: #222;
 }
 .titulo-monica {
-    color: #cc1f1f;
+    color: var(--color-primary);
     font-family: 'Bangers', 'Nunito', sans-serif;
     text-align: left;
     font-size: 56px;
@@ -31,10 +41,10 @@
 }
 
 .cabecalho{
+    background: var(--cabecalho-bg);
     display: flex;
     font-family: "Bangers", system-ui;
      font-weight: 400;
-        background: linear-gradient(90deg, #ffd1d1 0%, #ffe7d6 100%);
         box-shadow: 0 2px 6px rgba(0,0,0,0.06);
         font-family: "Bangers", system-ui;
         font-weight: 400;
@@ -53,7 +63,7 @@
 
     .menu-link{
         text-decoration: none;
-        color: #333;
+        color: var(--color-accent);
         font-weight: 700;
         font-size: 20px;
         padding: 6px 10px;
@@ -61,11 +71,11 @@
     }
     .menu-link:hover{
         text-decoration: none;
-        color: #8b0000;
+        color: var(--color-primary);
         transform: translateY(-2px);
     }
     .menu-link.ativo{
-        color: #b30000;
+        color: var(--color-primary);
         text-decoration: underline;
     }
 
@@ -90,7 +100,7 @@
     }
 
     .sobre{
-        background: #fff;
+        background: var(--card-bg);
         padding: 18px;
         border-radius: 8px;
         box-shadow: 0 4px 14px rgba(0,0,0,0.04);
@@ -105,11 +115,21 @@
         grid-template-columns: repeat(3,1fr);
         gap: 10px;
     }
-    .galeria img{width:100%;height:auto;border-radius:6px}
+    .galeria img{
+        width:100%;
+        height:auto;
+        border-radius:6px
+    }
 
-    .curiosidades{background:#fff;padding:16px;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,0.04);margin-top:18px}
+    .curiosidades{
+        background: var(--card-bg);
+        padding:16px;
+        border-radius:8px;
+        box-shadow:0 4px 14px rgba(0,0,0,0.04);
+        margin-top:18px
+    }
 
-    .rodape{margin-top:28px;padding:18px 0;text-align:center;color:#555}
+    .rodape{margin-top:28px;padding:18px 0;text-align:center;color:var(--color-accent)}
 
     @media (max-width: 800px){
         .hero{grid-template-columns: 1fr;}

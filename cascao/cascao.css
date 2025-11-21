@@ -137,17 +137,83 @@ body.pagina-cascao {
   text-decoration: underline;
 }
 
+/* ===== Navbar compartilhada (genérica) - usar em todas as páginas =====
+   Uso: no header de qualquer página coloque:
+   <nav class="nav-principal">
+     <div class="logo logo-geral">Nome</div>
+     <div class="menu-principal">
+       <a href="...">Início</a>
+       ...
+     </div>
+   </nav>
+   Cada página pode manter seu próprio .cabecalho-xxx e outros componentes. */
+:root {
+  --cabecalho-bg: #ffe066;
+  --color-primary: #d9480f;
+  --color-accent: #a67c00;
+  --font-logo: 'Fredoka', 'Bangers', cursive;
+}
+
+.nav-principal {
+  background: var(--cabecalho-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  gap: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* logo genérica para nav (pode ser usada também por .logo-cascao se desejar) */
+.logo-geral,
+.nav-principal .logo,
+.logo-cascao {
+  font-family: var(--font-logo);
+  font-size: 34px;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* menu genérico (visualmente igual em todas as páginas) */
+.menu-principal,
+.menu-cascao {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.menu-principal a,
+.menu-cascao a {
+  text-decoration: none;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 20px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.menu-principal a:hover,
+.menu-cascao a:hover {
+  background: #fffbe6;
+  color: var(--color-primary);
+}
+
+/* utilitário: aplicar a fonte do Cascão ao logo de outra página quando quiser */
+.usar-fonte-cascao {
+  font-family: var(--font-logo) !important;
+}
+
+/* pequenas adaptações responsivas para a navbar compartilhada */
 @media (max-width: 700px) {
-  .destaque-cascao {
+  .nav-principal {
     flex-direction: column;
     align-items: flex-start;
-    padding: 16px;
-  }
-  .galeria-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .curiosidades-lista {
-    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 10px 14px;
   }
 }
-@
