@@ -1,65 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cascão — Turma da Mônica</title>
-	<meta name="description" content="Página do Cascão, personagem da Turma da Mônica. Biografia, curiosidades e galeria.">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="cascao.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascão — Turma da Mônica</title>
+    <link rel="stylesheet" href="cascao.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Bangers&display=swap" rel="stylesheet">
 </head>
-<body class="pagina-cascao">
-	<header class="cabecalho-cascao">
-		<nav class="nav-principal">
-			<div class="logo logo-cascao">Cascão</div>
-			<div class="menu-principal">
-				<a href="../inicio/index.html">Início</a>
-				<a href="../monica/monica.html">Mônica</a>
-				<a href="../magali/magali.html">Magali</a>
-				<a href="../cebolinha/cebolinha.html">Cebolinha</a>
-			</div>
-		</nav>
-	</header>
 
-	<main>
-		<section class="destaque-cascao">
-			<img src="https://static.wikia.nocookie.net/turmada-monica/images/7/7e/Casc%C3%A3o.png" alt="Cascão" class="img-cascao">
-			<div class="bio-cascao">
-				<h1>O Rei da Fuga da Água</h1>
-				<p>Cascão é o personagem mais famoso por nunca tomar banho! Ele é esperto, divertido, adora esportes radicais e está sempre inventando brincadeiras com seus amigos. Tem medo de água, mas coragem de sobra para enfrentar qualquer aventura.</p>
-				<ul>
-					<li><strong>Primeira aparição:</strong> 1961</li>
-					<li><strong>Marca registrada:</strong> Sujeira e criatividade</li>
-					<li><strong>Melhor amigo:</strong> Cebolinha</li>
-				</ul>
-			</div>
-		</section>
+<body class="pg-cascao">
 
-		<section class="curiosidades-cascao">
-			<h2>Curiosidades</h2>
-			<div class="curiosidades-lista">
-				<div class="curio-item">Nunca foi mostrado tomando banho em nenhuma história oficial.</div>
-				<div class="curio-item">Já inventou máquinas para fugir da água.</div>
-				<div class="curio-item">É ótimo jogador de futebol e adora esportes radicais.</div>
-				<div class="curio-item">Tem uma porquinha de estimação chamada Chovinista.</div>
-			</div>
-		</section>
+    <nav class="navbar">
+        <div class="logo">Cascão</div>
+        <div class="menu">
+            <a href="../inicio/index.html">Início</a>
+            <a href="../monica/monica.html">Mônica</a>
+            <a href="../magali/magali.html">Magali</a>
+            <a href="../cebolinha/cebolinha.html">Cebolinha</a>
+        </div>
+    </nav>
 
-		<section class="galeria-cascao">
-			<h2>Galeria</h2>
-			<div class="galeria-grid">
-				<img src="https://static.wikia.nocookie.net/turmada-monica/images/7/7e/Casc%C3%A3o.png" alt="Cascão 1">
-				<img src="https://static.wikia.nocookie.net/turmada-monica/images/7/7e/Casc%C3%AÃo.png" alt="Cascão 2">
-				<img src="https://static.wikia.nocookie.net/turmada-monica/images/7/7e/Casc%C3%AÃo.png" alt="Cascão 3">
-			</div>
-		</section>
-	</main>
+    <main class="conteudo">
 
-	<footer class="rodape-cascao">
-		<p>Site do Cascão — Turma da Mônica | Projeto escolar</p>
-		<p><a href="../inicio/index.html">Voltar ao início</a></p>
-	</footer>
+        <!-- BLOCO 1 — CARTÃO INCLINADO -->
+        <section class="cartao cartao-1">
+            <h1 class="titulo-inclinado">Cascão</h1>
+            <p class="texto">
+                Engraçado, criativo e campeão em fugir da água!  
+                Cascão é o mestre das aventuras malucas e das ideias improvisadas.
+            </p>
+        </section>
+
+        <!-- BLOCO 2 — SOBRE -->
+        <section class="cartao cartao-2">
+            <h2>Quem é o Cascão?</h2>
+            <ul class="lista">
+                <li><strong>Primeira aparição:</strong> 1961</li>
+                <li><strong>Personalidade:</strong> corajoso, divertido e esperto</li>
+                <li><strong>Melhor amigo:</strong> Cebolinha</li>
+                <li><strong>Medo clássico:</strong> água!</li>
+            </ul>
+        </section>
+
+        <!-- BLOCO 3 — CURIOSIDADES -->
+        <section class="curiosidades">
+            <h2>Curiosidades</h2>
+
+            <div class="curio-grid">
+                <div class="curio-bloco bloco-amarelo">
+                    Nunca foi mostrado tomando banho nas histórias oficiais.
+                </div>
+
+                <div class="curio-bloco bloco-laranja">
+                    Ele sempre tem um plano maluco para fugir da água.
+                </div>
+
+                <div class="curio-bloco bloco-marrom">
+                    Adora esportes radicais e brincadeiras perigosas.
+                </div>
+
+                <div class="curio-bloco bloco-bege">
+                    Tem um porquinho de estimação chamado Chovinista.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por: Ellen — Turma da Mônica</p>
+    </footer>
+
 </body>
 </html>

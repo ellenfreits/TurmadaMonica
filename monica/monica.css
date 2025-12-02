@@ -1,143 +1,133 @@
-/* palette compartilhada (igual à página inicial / Cascão) */
 :root {
-  --cabecalho-bg: #ffe066;
+  --cabecalho-bg: #ff7866;
   --color-primary: #d9480f;
-  --color-accent: #a67c00;
+  --color-accent: #b1221e;
   --card-bg: #fffbe6;
   --page-bg-start: #f7f7d1;
   --page-bg-end: #ffe7b3;
 }
 
+/* Página */
 .pagina-monica {
-    background: linear-gradient(120deg, var(--page-bg-start) 0%, var(--page-bg-end) 100%);
-    font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    color: #222;
+  background: linear-gradient(120deg, var(--page-bg-start), var(--page-bg-end));
+  font-family: 'Nunito', system-ui;
+  color: #222;
+  margin: 0;
 }
+
+/* NAVBAR */
+.cabecalho {
+  background: var(--cabecalho-bg);
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  font-family: 'Bangers', sans-serif;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+}
+
+.menu-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 22px;
+  transition: .2s;
+}
+
+.menu-link:hover {
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.menu-link.ativo {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 28px auto;
+  padding: 0 18px;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  align-items: center;
+}
+
 .titulo-monica {
-    color: var(--color-primary);
-    font-family: 'Bangers', 'Nunito', sans-serif;
-    text-align: left;
-    font-size: 56px;
-    margin: 0 0 8px 0;
-}
-.texto1-monica {
-    line-height: 1.6;
-    font-size: 18px;
-    margin: 0 0 16px 0;
-    
-
-   
-    
+  color: var(--color-primary);
+  font-family: 'Bangers';
+  font-size: 56px;
+  margin: 0 0 8px 0;
 }
 
+.subtitulo {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Imagem */
 .imagem1-monica {
-    max-width: 320px;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-
-
+  max-width: 320px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-.cabecalho{
-    background: var(--cabecalho-bg);
-    display: flex;
-    font-family: "Bangers", system-ui;
-     font-weight: 400;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-        font-family: "Bangers", system-ui;
-        font-weight: 400;
-        justify-content: center;
-        padding: 18px 0;
-}
-.menu{
-    display: flex;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 28px;
-        max-width: 1000px;
-        margin: 0 auto;
+/* Seção sobre */
+.sobre {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+  margin: 24px 0;
 }
 
-    .menu-link{
-        text-decoration: none;
-        color: var(--color-accent);
-        font-weight: 700;
-        font-size: 20px;
-        padding: 6px 10px;
-        border-radius: 6px;
-    }
-    .menu-link:hover{
-        text-decoration: none;
-        color: var(--color-primary);
-        transform: translateY(-2px);
-    }
-    .menu-link.ativo{
-        color: var(--color-primary);
-        text-decoration: underline;
-    }
+.fatos {
+  margin-top: 12px;
+  padding-left: 18px;
+}
 
-    /* Layout container */
-    .container{
-        max-width: 1000px;
-        margin: 28px auto;
-        padding: 0 18px;
-    }
+/* Galeria */
+.galeria .grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
 
-    .hero{
-        display: grid;
-        grid-template-columns: 1fr 340px;
-        gap: 24px;
-        align-items: center;
-        margin-bottom: 26px;
-    }
-    .hero-text .subtitulo{
-        margin-top: 6px;
-        color: #555;
-        font-size: 18px;
-    }
+.galeria img {
+  border-radius: 6px;
+  width: 100%;
+}
 
-    .sobre{
-        background: var(--card-bg);
-        padding: 18px;
-        border-radius: 8px;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.04);
-        margin-bottom: 20px;
-    }
-    .sobre h2{margin-top:0}
-    .fatos{margin:12px 0 0 0;padding-left:18px}
+/* Curiosidades */
+.curiosidades {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+  margin-top: 18px;
+}
 
-    .galeria{margin: 18px 0}
-    .galeria .grid{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 10px;
-    }
-    .galeria img{
-        width:100%;
-        height:auto;
-        border-radius:6px
-    }
+/* Rodapé */
+.rodape {
+  text-align: center;
+  color: var(--color-accent);
+  padding: 28px 0;
+}
 
-    .curiosidades{
-        background: var(--card-bg);
-        padding:16px;
-        border-radius:8px;
-        box-shadow:0 4px 14px rgba(0,0,0,0.04);
-        margin-top:18px
-    }
 
-    .rodape{margin-top:28px;padding:18px 0;text-align:center;color:var(--color-accent)}
 
-    @media (max-width: 800px){
-        .hero{grid-template-columns: 1fr;}
-        .galeria .grid{grid-template-columns: repeat(2,1fr)}
-        .menu{gap:14px}
-    }
 
-    @media (max-width: 420px){
-        .galeria .grid{grid-template-columns: 1fr}
-        .titulo-monica{font-size:40px}
-    }
+
+
+
+ 
