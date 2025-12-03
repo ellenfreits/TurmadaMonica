@@ -1,0 +1,30 @@
+/* NAVBAR */
+.navbar {
+    background: #ffcc3b;
+    padding: 14px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.navbar .logo {
+    font-family: "Bangers", cursive;
+    font-size: 36px;
+    color: #b84d00;
+}
+
+.navbar .menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #744f00;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.navbar .menu a:hover {
+    background: #fff7da;
+    color: #c75a00;
+}

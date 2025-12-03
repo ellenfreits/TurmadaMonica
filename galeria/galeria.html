@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galeria.css">
+    <title>Document</title>
+</head>
+    <body class="pg-galeria">
+
+    <nav class="navbar">
+        <div class="logo">Galeria</div>
+        <div class="menu">
+            <a href="../inicio/index.html">Início</a>
+            <a href="../monica/monica.html">Mônica</a>
+            <a href="../cascao/cascao.html">Cascão</a>
+            <a href="../magali/magali.html">Magali</a>
+            <a href="../cebolinha/cebolinha.html">Cebolinha</a>
+        </div>
+    </nav>
+    <section class="fotos">
+            <button class="btn" onclick="anterior()">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <img src="coloque a primeira imagem aqui" alt="" class="img" id="img">
+            <button class="btn" onclick="proximo()">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+    </section>
+    <script>
+        const imagens = [
+            "imagem1",
+            "imagem2",
+            "imagem4",
+            "imagem5",
+            "imagem6",
+            "imagem7"
+        ];
+
+        let indice = 0;
+
+        function atualizarImagem() {
+            document.getElementById("img").src = imagens[indice];
+        }
+
+        function proximo() {
+            indice = (indice + 1) % imagens.length;
+            atualizarImagem();
+        }
+
+        function anterior() {
+            indice = (indice - 1 + imagens.length) % imagens.length;
+            atualizarImagem();
+        }
+    </script>
+
+</body>
+</html>

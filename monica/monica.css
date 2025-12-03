@@ -9,44 +9,42 @@
 
 /* Página */
 .pagina-monica {
-  background: linear-gradient(120deg, var(--page-bg-start), var(--page-bg-end));
+  background: #ffe7b3;
   font-family: 'Nunito', system-ui;
   color: #222;
   margin: 0;
 }
 
 /* NAVBAR */
-.cabecalho {
-  background: var(--cabecalho-bg);
-  padding: 18px 0;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-  font-family: 'Bangers', sans-serif;
+.navbar {
+    background: #ffcc3b;
+    padding: 14px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
-.menu {
-  display: flex;
-  gap: 32px;
+.navbar .logo {
+    font-family: "Bangers", cursive;
+    font-size: 36px;
+    color: #b84d00;
 }
 
-.menu-link {
-  color: var(--color-accent);
-  text-decoration: none;
-  font-size: 22px;
-  transition: .2s;
+.navbar .menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #744f00;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 6px;
 }
 
-.menu-link:hover {
-  color: var(--color-primary);
-  transform: translateY(-2px);
+.navbar .menu a:hover {
+    background: #fff7da;
+    color: #c75a00;
 }
-
-.menu-link.ativo {
-  text-decoration: underline;
-  color: var(--color-primary);
-}
-
 /* Container */
 .container {
   max-width: 1000px;
