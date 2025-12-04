@@ -8,7 +8,7 @@
 }
 
 /* Página */
-.pagina-monica {
+.pg-monica {
   background: #ffe7b3;
   font-family: 'Nunito', system-ui;
   color: #222;
@@ -17,7 +17,7 @@
 
 /* NAVBAR */
 .navbar {
-    background: #ffcc3b;
+    background: #b1221e;
     padding: 14px 22px;
     display: flex;
     justify-content: space-between;
@@ -28,13 +28,13 @@
 .navbar .logo {
     font-family: "Bangers", cursive;
     font-size: 36px;
-    color: #b84d00;
+    color: #ff7866;
 }
 
 .navbar .menu a {
     margin-left: 20px;
     text-decoration: none;
-    color: #744f00;
+    color: #ff7866;
     font-weight: 600;
     font-size: 18px;
     padding: 6px 10px;
@@ -42,7 +42,7 @@
 }
 
 .navbar .menu a:hover {
-    background: #fff7da;
+    background: #ffbcbc;
     color: #c75a00;
 }
 /* Container */
@@ -76,8 +76,6 @@
 .imagem1-monica {
   max-width: 320px;
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
 /* Seção sobre */
@@ -115,11 +113,33 @@
   margin-top: 18px;
 }
 
+/* bnt-galeria */
+
+.btn-galeria {
+  display: inline-block;
+  margin-top: 30px;
+  color: #ff7866; 
+  background: #b1221e;
+  font-weight: 600;
+  font-family: georgia;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn-galeria:hover {
+  background: #d9480f;
+  color: #ff7866;
+}
+
 /* Rodapé */
 .rodape {
-  text-align: center;
-  color: var(--color-accent);
-  padding: 28px 0;
+    background: #b1221e;
+    text-align: center;
+    padding: 12px;
+    margin-top: 50px;
+    font-weight: 600;
+    width: 100%;
 }
 
 

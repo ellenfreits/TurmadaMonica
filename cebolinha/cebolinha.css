@@ -1,32 +1,32 @@
 /* ===== NAVBAR ===== */
-
-.cabecalho {
-    background-color: #8fdb9d;
-    padding: 18px 0;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-.menu {
+.navbar {
+    background: #1a8a46;
+    padding: 14px 22px;
     display: flex;
-    justify-content: center;
-    gap: 26px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
-.menu-link {
+.navbar .logo {
+    font-family: "Bangers", cursive;
+    font-size: 36px;
+    color: #0d4a20;
+}
+
+.navbar .menu a {
+    margin-left: 20px;
     text-decoration: none;
-    color: #064a1b;
-    font-weight: bold;
-    transition: 0.3s;
+    color: #0b3d1c;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 6px;
 }
 
-.menu-link:hover {
-    color: #012e10;
-}
-
-.menu-link.ativo {
-    text-decoration: underline;
-    color: #000;
+.navbar .menu a:hover {
+    background: #d9ffe0;
+    color: #9be7a8;;
 }
 
 /* ===== FUNDO GERAL ===== */
@@ -61,6 +61,7 @@ body {
     font-size: 46px;
     color: #1a8a46;
     margin: 0;
+    font-family: "Bangers";
 }
 
 .frase-intro {
@@ -134,11 +135,36 @@ body {
     border: 2px solid #b6f3c2;
 }
 
+/* ===== bnt-galeria ===== */
+
+.btn-galeria {
+    display: inline-block;
+    margin-top: 30px;
+    background: #1a8a46;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: georgia;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-galeria:hover {
+    background: #48b86c;
+    color: #ffffff;
+}
+
+
 /* ===== RODAPÉ ===== */
 
 .rodape {
-    margin-top: 35px;
+    background: #1a8a46;
     text-align: center;
-    padding: 15px 0;
-    color: #0b3d1c;
+    padding: 12px;
+    margin-top: 50px;
+    font-weight: 600;
+    font-family: "nunito";
+    width: 100%;
 }
+

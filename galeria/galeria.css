@@ -1,6 +1,9 @@
+body{
+    background-color: hsl(212, 100%, 93%);
+}
 /* NAVBAR */
 .navbar {
-    background: #ffcc3b;
+    background: #0078c8;
     padding: 14px 22px;
     display: flex;
     justify-content: space-between;
@@ -11,13 +14,13 @@
 .navbar .logo {
     font-family: "Bangers", cursive;
     font-size: 36px;
-    color: #b84d00;
+    color: #270083;
 }
 
 .navbar .menu a {
     margin-left: 20px;
     text-decoration: none;
-    color: #744f00;
+    color: #270083;
     font-weight: 600;
     font-size: 18px;
     padding: 6px 10px;
@@ -25,6 +28,65 @@
 }
 
 .navbar .menu a:hover {
-    background: #fff7da;
-    color: #c75a00;
+    background: #b6d6fa;
+    color: #279bed;
+}
+
+/* CONTEÚDO */
+.btn {
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    background-color: #0078c8;
+    border: none;
+    cursor: pointer;
+    display: flex;      
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.btn i {
+    color: white;   
+    font-size: 26px;        
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.fotos img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 80px auto;
+    width: fit-content;
+    box-shadow: 0 0 20px #0078c8;
+    gap: 30px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 36px;
+    font-family: "Bangers";
+    color: #0078c8;
+    margin-top: 40px;
+}
+
+/* RODAPÉ */
+.rodape {
+    background: #0078c8;
+    text-align: center;
+    padding: 12px;
+    margin-top: 50px;
+    font-weight: 600;
+    font-family: "nunito";
+    width: 100%;
 }

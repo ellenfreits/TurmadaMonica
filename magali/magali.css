@@ -1,31 +1,32 @@
 /* NAVBAR */
-.cabecalho {
-    background-color: #ffdf6b;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.menu {
+.navbar {
+    background: #ffca50;
+    padding: 14px 22px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
-.menu-link {
+.navbar .logo {
+    font-family: "Bangers", cursive;
+    font-size: 36px;
+    color: #b84d00;
+}
+
+.navbar .menu a {
+    margin-left: 20px;
     text-decoration: none;
-    color: #573e00;
+    color: #b88600;
+    font-weight: 600;
     font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s;
+    padding: 6px 10px;
+    border-radius: 6px;
 }
 
-.menu-link:hover {
-    color: #8b5b00;
-}
-
-.ativo {
-    color: #000;
+.navbar .menu a:hover {
+    background: #fff7da;
+    color: #ffca50;;
 }
 
 /* CONTEÚDO */
@@ -46,6 +47,7 @@ body {
     color: #e6b800;
     text-align: center;
     margin-bottom: 5px;
+    font-family: "Bangers";
 }
 
 .subtitulo {
@@ -97,11 +99,34 @@ body {
     color: #5d4500;
 }
 
+/* bnt-galeria */
+.btn-galeria {
+    display: inline-block;
+    margin-top: 30px;
+    background: #b84d00;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: georgia;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.btn-galeria:hover {
+    background: #d66f1a;
+    color: #ffffff;
+}
+
+
 /* RODAPÉ */
 .rodape {
-    margin-top: 40px;
+    background: #ffca50;
     text-align: center;
-    color: #6a5200;
-    font-size: 15px;
-    padding-bottom: 20px;
+    padding: 12px;
+    margin-top: 50px;
+    font-weight: 600;
+    font-family: "nunito";
+    width: 100%;
 }

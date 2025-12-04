@@ -1,40 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="galeria.css">
-    <title>Document</title>
+    <title>Turma da Mônica - Galeria</title>
 </head>
     <body class="pg-galeria">
 
     <nav class="navbar">
         <div class="logo">Galeria</div>
         <div class="menu">
-            <a href="../inicio/index.html">Início</a>
+            <a href="../index.html">Início</a>
             <a href="../monica/monica.html">Mônica</a>
             <a href="../cascao/cascao.html">Cascão</a>
             <a href="../magali/magali.html">Magali</a>
             <a href="../cebolinha/cebolinha.html">Cebolinha</a>
         </div>
     </nav>
-    <section class="fotos">
-            <button class="btn" onclick="anterior()">
-                <i class="fa-solid fa-angle-left"></i>
-            </button>
-            <img src="coloque a primeira imagem aqui" alt="" class="img" id="img">
-            <button class="btn" onclick="proximo()">
-                <i class="fa-solid fa-angle-right"></i>
-            </button>
-    </section>
+    <main>
+        <section class="titulo">
+            <h1>Galeria de Fotos</h1>
+        <section class="fotos">
+                <button class="btn" onclick="anterior()">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <img src="imagens/foto1.jpg" alt="" class="img" id="img">
+                <button class="btn" onclick="proximo()">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por: Ellen — Turma da Mônica</p>
+    </footer>
+
+
     <script>
         const imagens = [
-            "imagem1",
-            "imagem2",
-            "imagem4",
-            "imagem5",
-            "imagem6",
-            "imagem7"
+            "imagens/foto1.jpg",
+            "imagens/foto2.jpg",
+            "imagens/foto3.jpg",
+            "imagens/foto4.jpg",
+            "imagens/foto5.jpg",
         ];
 
         let indice = 0;

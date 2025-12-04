@@ -93,6 +93,26 @@ body.pg-cascao {
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
+.btn-galeria {
+    display: inline-block;
+    margin-top: 30px;
+    background: #ffcc3b;
+    color: #744f00;
+    font-weight: 600;
+    font-family: georgia;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.btn-galeria:hover {
+    background: #ffd966;
+    color: #b84d00;
+}
+
+
 /* CORES DIFERENTES PARA OS BLOCOS */
 .bloco-amarelo { background: #ffe79d; }
 .bloco-laranja { background: #ffd28a; }
@@ -103,6 +123,7 @@ body.pg-cascao {
 .rodape {
     background: #ffcc3b;
     text-align: center;
+    font-family: "Fredoka";
     padding: 12px;
     margin-top: 50px;
     font-weight: 600;
